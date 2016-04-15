@@ -1,0 +1,8 @@
+<h1>Welcome Home :)</h1>
+<p>Text Testing</p>
+<ol>
+	<% @profiles.each do |profile| %> 
+		<a href="<%= profile_path(profile.id) %><li><%= profile.name %>" (<%= profile.level%>)</li><%= profile.name %> (<%= profile.level %>)</li></a>
+	<% end %>
+</ol>
+
